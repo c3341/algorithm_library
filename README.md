@@ -1,5 +1,5 @@
 # algorithm_library
-:Todo
+TODO
 
  ・区間クエリ(セグメントツリー)およびDP
  
