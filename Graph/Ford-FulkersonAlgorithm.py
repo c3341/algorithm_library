@@ -1,20 +1,3 @@
-import sys
-import os
-f = open("C:/Users/kazuki/Documents/python/import.txt","r")
-sys.stdin = f
-# -*- coding: utf-8 -*-
-from itertools import*
-from math import*
-from collections import*
-from heapq import*
-from bisect import bisect_left,bisect_right
-from copy import deepcopy
-inf = float("inf")
-mod = 10**9+7
-from functools import reduce
-import sys
-sys.setrecursionlimit(10**7)
-
 #フォードファルカーソン(O(FE))
 class FordFulkerson:
     def __init__(self,N):
@@ -26,7 +9,8 @@ class FordFulkerson:
         forward[2] = backward = [fr,0,forward]
         self.G[fr].append(forward)
         self.G[to].append(backward)
-
+        
+　　#増加パスをDFSで増やす
     def dfs(self,v,t,f):
         if v == t:
             return f
